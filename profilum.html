@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFILUM | Servicio</title>
+    <title>PROFILUM | Tu identidad digital</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #06070d;
-            --surface: #111423;
-            --surface-soft: #181c2f;
-            --text: #f5f7ff;
-            --muted: #aeb7d4;
-            --accent: #8b5cf6;
-            --accent-2: #22d3ee;
-            --border: rgba(255, 255, 255, 0.12);
+                --bg: #f9fafb;
+            --surface: #ffffff;
+            --surface-soft: #eef4ff;
+            --text: #1e3a8a;
+            --muted: #355289;
+            --accent: #1e3a8a;
+            --accent-2: #22b8cf;
+            --border: rgba(30, 58, 138, 0.14);
         }
 
         * { box-sizing: border-box; }
 
         body {
             margin: 0;
-            font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+            font-family: Inter, Roboto, Segoe UI, Arial, sans-serif;
             color: var(--text);
             background:
-                radial-gradient(circle at 10% 10%, rgba(139, 92, 246, 0.25), transparent 40%),
-                radial-gradient(circle at 90% 20%, rgba(34, 211, 238, 0.18), transparent 35%),
+                radial-gradient(circle at 10% 10%, rgba(30, 58, 138, 0.16), transparent 40%),
+                radial-gradient(circle at 90% 20%, rgba(34, 184, 207, 0.15), transparent 35%),
                 var(--bg);
             min-height: 100vh;
         }
@@ -43,18 +46,21 @@
         }
 
         .brand {
+              font-family: Montserrat, Poppins, Inter, sans-serif;
             font-weight: 800;
             letter-spacing: 0.12em;
             font-size: 0.95rem;
+             color: var(--accent);
         }
 
         .back-link {
-            color: var(--text);
+            color: var(--accent);
             text-decoration: none;
             border: 1px solid var(--border);
             padding: 10px 14px;
             border-radius: 10px;
             font-size: 0.9rem;
+             background: rgba(255, 255, 255, 0.8);
         }
 
         .hero {
@@ -62,10 +68,11 @@
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 38px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 22px 45px rgba(30, 58, 138, 0.12);
         }
 
         .hero h1 {
+            font-family: Montserrat, Poppins, Inter, sans-serif;
             margin: 0 0 12px;
             font-size: clamp(2rem, 5vw, 3.4rem);
             line-height: 1.1;
@@ -82,12 +89,14 @@
             display: inline-block;
             padding: 6px 10px;
             border-radius: 999px;
-            border: 1px solid rgba(34, 211, 238, 0.5);
+          border: 1px solid rgba(34, 184, 207, 0.45);
             color: var(--accent-2);
             font-size: 0.78rem;
+            font-weight: 600;
             letter-spacing: 0.03em;
             margin-bottom: 16px;
             text-transform: uppercase;
+            background: rgba(34, 184, 207, 0.08);
         }
 
         .grid {
@@ -101,12 +110,14 @@
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 18px;
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.88);
         }
 
         .card h3 {
+             font-family: Montserrat, Poppins, Inter, sans-serif;
             margin-top: 0;
             margin-bottom: 10px;
+            color: var(--accent);
         }
 
         .card p {
@@ -121,7 +132,7 @@
     <div class="wrapper">
         <header class="topbar">
             <div class="brand">PROFILUM</div>
-            <a class="back-link" href="index.html">← Volver al portfolio</a>
+            <a class="back-link" href="index.html">← Página principal</a>
         </header>
 
         <main class="hero">
